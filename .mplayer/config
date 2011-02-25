@@ -1,4 +1,7 @@
-vo="xv"
-ass="yes"
-slang="en"
-alang="ja"
+vo=xv
+idx=yes
+ass=yes
+cache = 600
+ao=alsa
+alang=jpn,jp
+slang=eng,en

@@ -42,16 +42,25 @@
 *color7: #d2d2d2
 *color15: #ffffff
 
+!---------------------
+! etc
+!---------------------
+
 urxvt*background: #171717
 urxvt*foreground: #C0C0C0
 
 URxvt.perl-ext-common:  default,matcher
-URxvt.urlLauncher:      /usr/bin/firefox
+URxvt.urlLauncher:      /usr/bin/firefox-bin
 URxvt.matcher.button:   1 
 
-urxvt.font: xft:Terminus:pixelsize=8 \
-xft:Kochi Gothic:pixelsize=8 \
+urxvt*font: xft:Terminus:pixelsize=8, \
+xft:Kochi Gothic:pixelsize=8, \
 xft:Baekmuk Gulim:pixelsize=8
+
+urxvt*boldfont: xft:Terminus:pixelsize=8, \
+xft:Kochi Gothic:pixelsize=8, \
+xft:Baekmuk Gulim:pixelsize=8
+
 
 urxvt.scrollBar: false
 
