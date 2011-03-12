@@ -12,3 +12,6 @@ alias tv-rt='rtmpdump -v -r rtmp://fms5.visionip.tv/live -a live -W http://rt.co
 
 #ngrep alias to sniff out rtmpdump arguments
 alias tv-sniff='sudo ngrep -d eth1 -W byline | grep -Pio "(swfurl\.{2}.*?\.{2})|(\.{2}play.*?\w.*?\.{3})|(tcUrl.*?rtmp://.*?\.{2})|(pageUrl\.{3}.*?\.{2})"'
+
+#preferred mplayer flags + uau
+alias mplayer='mplayer-uau'
