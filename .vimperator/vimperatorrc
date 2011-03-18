@@ -1,1 +1,2 @@
 colorscheme zenburn
+set guioptions+=B
