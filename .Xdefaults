@@ -25,17 +25,21 @@
 ! Blue
 
 !*color4: #66A8EF
+*color4: #228aff
 *color12: #90A7C1
 
 ! Magenta
 
-*color5: #906479
+!*color5: #906479
+*color5: #e488ff
 *color13: #DF5784
 
 ! Cyan
 
-*color6: #8AA7B9
-*color14: #B7E2FB
+!*color6: #8AA7B9
+*color6: #B3E1FF
+!*color14: #B7E2FB
+*color14: #D7F0FF
 
 ! White
 
