@@ -3,7 +3,6 @@ export PATH=${PATH}:${HOME}/.bin
 
 # git aliases
 # commit -a -m 'minor changes dd/mm/yyyy'
-#alias misc-commit="git commit -a -m 'minor changes ${date}'"
 alias misc-commit='DATE=$(date);git commit -a -m "minor changes: $DATE"'
 #rtmp news feeds
 alias tv-aljazeera='rtmpdump -v -r rtmp://livestfslivefs.fplive.net/livestfslive-live/ -y "aljazeera_en_veryhigh?videoId=747084146001&lineUpId=&pubId=665003303001&playerId=751182905001&affiliateId=" -W "http://admin.brightcove.com/viewer/us1.24.04.08.2011-01-14072625/federatedVideoUI/BrightcovePlayer.swf -p "http://english.aljazeera.net/watch_now/ -a "aljazeeraflashlive-live?videoId=747084146001&lineUpId=&pubId=665003303001&playerId=751182905001&affiliateId=" | mplayer-uau - -vo xv'
