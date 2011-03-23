@@ -1,6 +1,35 @@
 # ~/.bin added to path in case /etc/profile hasn't been edited
 export PATH=${PATH}:${HOME}/.bin
 
+# git prompt + PS1
+#
+#function parse_git_dirty {
+#        status=`git status 2> /dev/null`
+#        dirty=`    echo -n "${status}" 2> /dev/null | grep -q "Changed but not updated" 2> /dev/null; echo "$?"`
+#        untracked=`echo -n "${status}" 2> /dev/null | grep -q "Untracked files" 2> /dev/null; echo "$?"`
+#        ahead=`    echo -n "${status}" 2> /dev/null | grep -q "Your branch is ahead of" 2> /dev/null; echo "$?"`
+#        newfile=`  echo -n "${status}" 2> /dev/null | grep -q "new file:" 2> /dev/null; echo "$?"`
+#        renamed=`  echo -n "${status}" 2> /dev/null | grep -q "renamed:" 2> /dev/null; echo "$?"`
+#        bits=''
+#        if [ "${dirty}" == "0" ]; then
+#                bits="${bits}☭"
+#        fi
+#        if [ "${untracked}" == "0" ]; then
+#                bits="${bits}♥"
+#        fi
+#        if [ "${newfile}" == "0" ]; then
+#                bits="${bits}*"
+#        fi
+#        if [ "${ahead}" == "0" ]; then
+#                bits="${bits}+"
+#        fi
+#        if [ "${renamed}" == "0" ]; then
+#                bits="${bits}>"
+#        fi
+#        echo "${bits}"
+#}
+#
+
 # git aliases
 alias misc-commit='DATE=$(date);git commit -a -m "minor changes: $DATE"'
 alias commit='git commit -a'
