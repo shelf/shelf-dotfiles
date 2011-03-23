@@ -1,33 +1,39 @@
 # ~/.bin added to path in case /etc/profile hasn't been edited
 export PATH=${PATH}:${HOME}/.bin
 
-# git prompt + PS1
-#
+# git prompt and PS1 - implemented in /etc/bash/bashrc
 #function parse_git_dirty {
-#        status=`git status 2> /dev/null`
-#        dirty=`    echo -n "${status}" 2> /dev/null | grep -q "Changed but not updated" 2> /dev/null; echo "$?"`
-#        untracked=`echo -n "${status}" 2> /dev/null | grep -q "Untracked files" 2> /dev/null; echo "$?"`
-#        ahead=`    echo -n "${status}" 2> /dev/null | grep -q "Your branch is ahead of" 2> /dev/null; echo "$?"`
-#        newfile=`  echo -n "${status}" 2> /dev/null | grep -q "new file:" 2> /dev/null; echo "$?"`
-#        renamed=`  echo -n "${status}" 2> /dev/null | grep -q "renamed:" 2> /dev/null; echo "$?"`
-#        bits=''
-#        if [ "${dirty}" == "0" ]; then
-#                bits="${bits}☭"
-#        fi
-#        if [ "${untracked}" == "0" ]; then
-#                bits="${bits}♥"
-#        fi
-#        if [ "${newfile}" == "0" ]; then
-#                bits="${bits}*"
-#        fi
-#        if [ "${ahead}" == "0" ]; then
-#                bits="${bits}+"
-#        fi
-#        if [ "${renamed}" == "0" ]; then
-#                bits="${bits}>"
-#        fi
-#        echo "${bits}"
+#  status=`git status 2> /dev/null`
+#  dirty=` echo -n "${status}" 2> /dev/null | grep -q "Changed but not updated" 2> /dev/null; echo "$?"`
+## untracked=`echo -n "${status}" 2> /dev/null | grep -q "Untracked files" 2> /dev/null; echo "$?"`
+#  modified=` echo -n "${status}" 2> /dev/null | grep -q "modified" 2> /dev/null; echo "$?"`
+#  ahead=` echo -n "${status}" 2> /dev/null | grep -q "Your branch is ahead of" 2> /dev/null; echo "$?"`
+#  newfile=` echo -n "${status}" 2> /dev/null | grep -q "new file:" 2> /dev/null; echo "$?"`
+#  renamed=` echo -n "${status}" 2> /dev/null | grep -q "renamed:" 2> /dev/null; echo "$?"`
+#  bits=''
+#  if [ "${dirty}" == "0" ]; then
+#    bits="${bits}☭"
+#  fi
+#  if [ "${modified}" == "0" ]; then
+#    bits="${bits}^"
+#  fi
+#  if [ "${newfile}" == "0" ]; then
+#    bits="${bits}*"
+#  fi
+#  if [ "${ahead}" == "0" ]; then
+#    bits="${bits}+"
+#  fi
+#  if [ "${renamed}" == "0" ]; then
+#    bits="${bits}>"
+#  fi
+#  echo $bits
 #}
+#
+#if [[ ${EUID} == 0 ]] ; then
+#PS1='\e[31m`parse_git_dirty`\e[m[\e[31m\w\e[m] \$: '
+#else
+#PS1='\e[36m`parse_git_dirty`\e[m[\e[36m\w\e[m] \$: '
+#fi
 #
 
 # git aliases
