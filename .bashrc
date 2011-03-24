@@ -18,7 +18,7 @@ export PATH=${PATH}:${HOME}/.bin
 #    bits="${bits}^"
 #  fi
 #  if [ "${newfile}" == "0" ]; then
-#    bits="${bits}*"
+#    bits=$bits"++"
 #  fi
 #  if [ "${ahead}" == "0" ]; then
 #    bits="${bits}+"
