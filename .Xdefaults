@@ -59,6 +59,10 @@ URxvt.perl-ext-common:  default,matcher
 URxvt.urlLauncher:      /usr/bin/firefox-bin
 URxvt.matcher.button:   1 
 
+Xft*antialias: false 
+Xft*hinting: false
+
+
 urxvt*font: xft:Terminus:pixelsize=8:antialias=false, \
 xft:Kochi Gothic:pixelsize=8:antialias=false, \
 xft:Baekmuk Gulim:pixelsize=8:antialias=false
