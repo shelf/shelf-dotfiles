@@ -2,12 +2,12 @@
 include "/usr/share/themes/Nodoka-Midnight/gtk-2.0/gtkrc"
 
 style "user-font" {
-	font_name = "Fixed 8"
+	font_name = "Meiryo 8"
 }
 
 widget_class "*" style "user-font"
 
-gtk-font-name="Fixed 8"
+gtk-font-name="Meiryo 8"
 
 gtk-theme-name  = "Nodoka-Midnight"
 
